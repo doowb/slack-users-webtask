@@ -27,6 +27,27 @@
   ],
   "devDependencies": {
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-bundle-webtask": "^0.1.0"
+    "gulp-bundle-webtask": "^0.1.0",
+    "gulp-format-md": "^0.1.10"
+  },
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "related": {
+      "list": []
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ]
   }
 }
