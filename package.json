@@ -1,6 +1,6 @@
 {
   "name": "slack-users-wt",
-  "description": "Webtask.io service for getting the users for a specified slack team.",
+  "description": "Webtask.io service for a slack badge showing the current and total users of a slack team.",
   "version": "0.1.0",
   "homepage": "https://github.com/doowb/slack-users-wt",
   "author": "Brian Woodward (https://github.com/doowb)",
