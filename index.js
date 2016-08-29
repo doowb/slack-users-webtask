@@ -1,14 +1,10 @@
 'use strict';
 
-var fs = require('fs');
 var slackUsers = require('slack-users');
-var Handlebars = require('handlebars');
-var helpers = require('./lib/helpers');
+var render = require('./lib/render');
 
 module.exports = function (ctx, req, res) {
   var cb = done(res);
-  var template = fs.readFileSync('./templates/badge.hbs', 'utf8');
-  Handlebars.registerHelper(helpers);
 
   var team = ctx.data.SLACK_TEAM;
   var token = ctx.data.SLACK_TOKEN;
@@ -48,8 +44,7 @@ module.exports = function (ctx, req, res) {
     data.rw = data.sep + width(data.value) + data.pad;
     data.tw = data.lw + data.rw;
 
-    var fn = Handlebars.compile(template);
-    cb(null, fn(data));
+    cb(null, render(data));
   });
 };
 
