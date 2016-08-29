@@ -2,16 +2,16 @@
 
 require('mocha');
 var assert = require('assert');
-var slackUsersWt = require('./');
+var webtask = require('./');
 var render = require('./lib/render');
 
 function width(str) {
   return 7 * str.length;
 }
 
-describe('slack-users-wt', function() {
+describe('slack-users-webtask', function() {
   it('should export a function', function() {
-    assert.equal(typeof slackUsersWt, 'function');
+    assert.equal(typeof webtask, 'function');
   });
 
   it('should render an svg', function() {

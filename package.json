@@ -1,12 +1,12 @@
 {
-  "name": "slack-users-wt",
+  "name": "slack-users-webtask",
   "description": "Webtask.io service for a slack badge showing the current and total users of a slack team.",
   "version": "0.1.0",
-  "homepage": "https://github.com/doowb/slack-users-wt",
+  "homepage": "https://github.com/doowb/slack-users-webtask",
   "author": "Brian Woodward (https://github.com/doowb)",
-  "repository": "doowb/slack-users-wt",
+  "repository": "doowb/slack-users-webtask",
   "bugs": {
-    "url": "https://github.com/doowb/slack-users-wt/issues"
+    "url": "https://github.com/doowb/slack-users-webtask/issues"
   },
   "license": "MIT",
   "files": [

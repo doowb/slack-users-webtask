@@ -1,4 +1,4 @@
-# slack-users-wt [![NPM version](https://img.shields.io/npm/v/slack-users-wt.svg?style=flat)](https://www.npmjs.com/package/slack-users-wt) [![NPM downloads](https://img.shields.io/npm/dm/slack-users-wt.svg?style=flat)](https://npmjs.org/package/slack-users-wt) [![Build Status](https://img.shields.io/travis/doowb/slack-users-wt.svg?style=flat)](https://travis-ci.org/doowb/slack-users-wt)
+# slack-users-webtask [![NPM version](https://img.shields.io/npm/v/slack-users-webtask.svg?style=flat)](https://www.npmjs.com/package/slack-users-webtask) [![NPM downloads](https://img.shields.io/npm/dm/slack-users-webtask.svg?style=flat)](https://npmjs.org/package/slack-users-webtask) [![Build Status](https://img.shields.io/travis/doowb/slack-users-webtask.svg?style=flat)](https://travis-ci.org/doowb/slack-users-webtask)
 
 Webtask.io service for a slack badge showing the current and total users of a slack team.
 
@@ -7,13 +7,13 @@ Webtask.io service for a slack badge showing the current and total users of a sl
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save slack-users-wt
+$ npm install --save slack-users-webtask
 ```
 
 ## Usage
 
 ```js
-var users = require('slack-users-wt');
+var users = require('slack-users-webtask');
 module.exports = function(ctx, req, res) {
   // do any customization for your implementation here
   users(ctx, req, res);
@@ -27,7 +27,7 @@ This module is intended to be used in a [webtask.io](https://webtask.io/) task t
 There is a distribution file provided in [dist/main.js](dist/main.js) if you want to deploy it to webtask.io directly using the following command:
 
 ```bash
-$ wt create node_modules/slack-users-wt/dist/main.js --name my-slack-users-name --secret SLACK_TEAM='my-slack-team' --secret SLACK_TOKEN='XXXXXXX'
+$ wt create node_modules/slack-users-webtask/dist/main.js --name my-slack-users-name --secret SLACK_TEAM='my-slack-team' --secret SLACK_TOKEN='XXXXXXX'
 ```
 
 The main requirement is to provide the `SLACK_TEAM` and `SLACK_TOKEN` values. The above example shows setting them as secrets so they'll be available on the `ctx` when the webtask is executed.
@@ -85,7 +85,7 @@ $ npm install -d && npm test
 ### License
 
 Copyright © 2016, [Brian Woodward](https://github.com/doowb).
-Released under the [MIT license](https://github.com/doowb/slack-users-wt/blob/master/LICENSE).
+Released under the [MIT license](https://github.com/doowb/slack-users-webtask/blob/master/LICENSE).
 
 ***
 
