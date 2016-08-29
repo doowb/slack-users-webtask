@@ -1,4 +1,4 @@
-# slack-users-wt [![NPM version](https://img.shields.io/npm/v/slack-users-wt.svg?style=flat)](https://www.npmjs.com/package/slack-users-wt) [![NPM downloads](https://img.shields.io/npm/dm/slack-users-wt.svg?style=flat)](https://npmjs.org/package/slack-users-wt)
+# slack-users-wt [![NPM version](https://img.shields.io/npm/v/slack-users-wt.svg?style=flat)](https://www.npmjs.com/package/slack-users-wt) [![NPM downloads](https://img.shields.io/npm/dm/slack-users-wt.svg?style=flat)](https://npmjs.org/package/slack-users-wt) [![Build Status](https://img.shields.io/travis/doowb/slack-users-wt.svg?style=flat)](https://travis-ci.org/doowb/slack-users-wt)
 
 Webtask.io service for getting the users for a specified slack team.
 
