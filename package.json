@@ -35,9 +35,13 @@
     "mocha": "^3.0.2"
   },
   "keywords": [
+    "badge",
     "slack",
+    "slack-users-webtask",
+    "svg",
     "users",
-    "wt"
+    "webtask",
+    "webtask.io"
   ],
   "browserify": {
     "transform": [
