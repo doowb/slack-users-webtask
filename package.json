@@ -10,8 +10,11 @@
   },
   "license": "MIT",
   "files": [
+    "dist",
     "index.js",
-    "LICENSE"
+    "lib",
+    "LICENSE",
+    "templates"
   ],
   "main": "index.js",
   "engines": {
@@ -20,15 +23,24 @@
   "scripts": {
     "test": "mocha"
   },
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  },
+  "devDependencies": {
+    "brfs": "^1.4.3",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-bundle-webtask": "^0.1.0",
+    "gulp-format-md": "^0.1.10"
+  },
   "keywords": [
     "slack",
     "users",
     "wt"
   ],
-  "devDependencies": {
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-bundle-webtask": "^0.1.0",
-    "gulp-format-md": "^0.1.10"
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
   },
   "verb": {
     "toc": false,
