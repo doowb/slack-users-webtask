@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{tw}}" height="16">
+  <rect rx="3" width="{{tw}}" height="16" fill="#555" />
+  <rect rx="3" x="{{lw}}" width="{{rw}}" height="16" fill="{{color}}" />
+  <path d="M{{lw}} 0h{{sep}}v16h-{{sep}}z" fill="{{color}}" />
+  <g text-anchor="middle" font-family="Verdana" font-size="11">
+    <text fill="#010101" fill-opacity=".3" x="{{round (divide lw 2)}}" y="12">{{title}}</text>
+    <text fill="#fff" x="{{round (divide lw 2)}}" y="11">{{title}}</text>
+
+    <text fill="#010101" fill-opacity=".3" x="{{add lw (round (divide lw 2))}}" y="12">{{value}}</text>
+    <text fill="#fff" x="{{add lw (round (divide lw 2))}}" y="11">{{value}}</text>
+  </g>
+</svg>
