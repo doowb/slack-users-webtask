@@ -24,7 +24,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "handlebars": "^4.0.5"
+    "handlebars": "^4.0.5",
+    "slack-users": "^0.1.0"
   },
   "devDependencies": {
     "brfs": "^1.4.3",
