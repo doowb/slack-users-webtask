@@ -14,15 +14,15 @@ $ npm install --save slack-users-wt
 
 ```js
 var users = require('slack-users-wt');
-module.exports = function(ctx, cb) {
+module.exports = function(ctx, req, res) {
   // do any customization for your implementation here
-  users(ctx, cb);
+  users(ctx, req, res);
 };
 ```
 
 ## What is this?
 
-This module is intended to be used in a [webtask.io](https://webtask.io/) task to provide slack users functionality.
+This module is intended to be used in a [webtask.io](https://webtask.io/) task to create an svg badge showing the current online users for a slack community.
 
 There is a distribution file provided in [dist/main.js](dist/main.js) if you want to deploy it to webtask.io directly using the following command:
 
@@ -43,7 +43,7 @@ After the webtask has been created, it can be used by doing a `GET` request from
 $ curl https://webtask.it.auth0.com/api/run/wt-{my-profile}-0/my-slack-users-name?webtask_no_cache=1
 ```
 
-An error of users will be returned when successful.
+An svg image will be returned with the current and total users for the specified slack community.
 
 ## About
 
